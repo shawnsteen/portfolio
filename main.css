@@ -92,7 +92,7 @@ body {
 
 .h-wrapper {
     text-align: center;
-    height: calc(100vh + 8px);
+    height: 100vh;
     background-image: linear-gradient(260deg, #050404 0%, #312626 100%);
     color: rgb(255, 255, 255, 0.8);
     padding: 25pt 0;
