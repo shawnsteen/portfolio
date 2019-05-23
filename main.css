@@ -189,7 +189,7 @@ h1 {
 }
 
 #down {
-    animation: color-grow 3s infinite;
+    animation: color-grow 2s infinite;
     
 }
 
@@ -206,7 +206,7 @@ h1 {
 }
 
 #alt-down {
-    animation: alt-color-grow 3s infinite;
+    animation: alt-color-grow 2s infinite;
 }
 
 /* About Section */
