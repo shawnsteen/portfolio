@@ -66,7 +66,7 @@ a {
 
 .nav-links, .link {
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255, 0.9);
 }
 
 .main-nav li {
@@ -151,22 +151,15 @@ h1 {
     padding: 0.5em 0;
 }
 
-
 .highlight {
     font-weight: bold;
     color: #4885ed;
     text-shadow: 1px 1px rgba(72, 133, 237, 0.8);
 }
 
-.button {
-    display: inline-block;
-    border: 3px solid rgb(255, 255, 255, 0.8);
-    border-radius: 3px;
-    padding: 1.2rem 0;
-    font-size: 1rem;
-    width: 10em;
-    height: 5em;
-}
+
+
+
 
 .heading-caption {
     margin: 1rem;
@@ -174,6 +167,27 @@ h1 {
     border-top: 5px solid rgb(255, 255, 255, 0.5);
     border-bottom: 5px solid rgb(255, 255, 255, 0.5);
     border-radius: 5px;
+}
+
+/* Keyframes for Buttons */
+@keyframes border-color {
+    0%, 100% {
+        border: 3px solid rgb(255, 255, 255, 0.7);
+    }
+
+    50% {
+        border: 3px solid rgb(255, 255, 255);
+    }
+}
+
+@keyframes alt-border-color {
+    0%, 100% {
+        border: 3px solid rgb(255, 255, 255);
+    }
+
+    50% {
+        border: 3px solid rgb(255, 255, 255, 0.7);
+    }
 }
 
 @keyframes color-grow {
@@ -188,11 +202,6 @@ h1 {
     }
 }
 
-#down {
-    animation: color-grow 2s infinite;
-    
-}
-
 @keyframes alt-color-grow {
     0%, 100% {
         color: #4885ed;
@@ -203,6 +212,30 @@ h1 {
         color: #fff;
         font-size: 1rem;
     }
+}
+
+/* Buttons */
+.button {
+    display: inline-block;
+    /* border: 3px solid rgb(255, 255, 255, 0.8); */
+    border-radius: 3px;
+    padding: 1.2rem 0;
+    font-size: 1rem;
+    width: 10em;
+    height: 5em;
+}
+
+#about-button {
+    animation: border-color 2s infinite;
+}
+
+#down {
+    animation: color-grow 2s infinite;
+    
+}
+
+#fighting-button {
+    animation: alt-border-color 2s infinite;
 }
 
 #alt-down {
@@ -219,10 +252,8 @@ figure {
 
 /* Fighting Section */
 .fighting-wrapper {
-    border: 3px solid rgba(49, 38, 38);
-    border-radius: 3px;
     background: rgba(49, 38, 38, 0.5);
-    margin: 5em 1em 1em 1em;
+    margin: 5em 0;
 }
 
 figcaption {
