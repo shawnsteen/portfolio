@@ -57,11 +57,13 @@ a {
 .nav-links, .link {
     text-decoration: none;
     color: rgb(255, 255, 255, 0.9);
+    z-index: 5;
 }
 
 .main-nav li {
     text-align: center;
     margin: 15px auto;
+    z-index: 5;
 }
 
 .logo {
@@ -84,6 +86,7 @@ a {
     cursor: pointer;
     color: #4885ed;
     font-size: 1.5rem;
+    z-index: 5;
 }
 
 .active {
@@ -171,17 +174,18 @@ h1 {
 
 /* Buttons */
 .button {
-    display: inline-block;
-    
+    display: inline-block;    
     border-radius: 3px;
     padding: 1.2rem 0;
     font-size: 1rem;
     width: 10em;
     height: 5em;
+    
 }
 
 #about-button {
     animation: border-color 2s infinite;
+    box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.5);
 }
 
 #down {
@@ -191,6 +195,7 @@ h1 {
 
 #fighting-button {
     animation: alt-border-color 2s infinite;
+    box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.5);
 }
 
 #alt-down {
@@ -223,28 +228,64 @@ figcaption {
 }
 
 .thumb-link {
-    width: 5em;
+    width: 50px;
 }
 
-.video-heading {
-    background: rgb(255, 255, 255, 0.5);
-    margin-top: 5em;
-}
+
 iframe {
     max-width: 100%;
     padding: 0 0.5em 0.5em 1em;
 }
 
+
+/* Videos Page */
+#vid-body {
+    height: 100vh;
+}
 #myVideo {
     position: fixed;
-    right: 0;
-    bottom: 0;
+    right: -33vw;
+    top: -10vh;
     min-width: 100vw; 
-    min-height: 100vh;
-    max-width: 100vw;
+    min-height: 120vh;
     opacity: 0.6;
     z-index: -1;
   }
+
+  .vid-wrap {
+      background: rgba(72, 133, 237, 0.5);
+      margin-top: 1em;
+  }
+
+  .vid-wrap h2 {
+      background: rgba(72, 133, 237, 0.1);
+  }
+
+  .vid-wrap .link {
+      font-size: 1rem;
+      display: block;
+      border: 1px solid rgba(255, 255, 255, 0.9);
+      border-radius: 3px;
+      margin: 0.4em;
+  }
+
+
+
+#videos-button {
+        border: 3px solid #4885ed;
+        border-radius: 3px;
+        color: #fff;
+        font-style: italic;
+        text-emphasis: bold;
+        text-shadow: 1px 1px #fff;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    }
+
+#vid-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
 
 
 /* Footer */
@@ -415,7 +456,7 @@ footer {
     .fighting-wrapper {
         display: grid;
         grid-template-columns: 10em 1fr 1fr 1fr 10em;
-        grid-template-rows: auto auto 1fr 1fr 1.25fr;
+        grid-template-rows: auto auto 1fr 1fr 1.25fr auto;
         grid-gap: 1em;
         align-items: center;
     }
@@ -459,13 +500,7 @@ footer {
         align-self: end;
     }
 
-    .video-heading {
-        background: none;
-        grid-column: 3;
-        align-self: end;
-    }
-
-    iframe {
+    #main-iframe {
         margin: 0;
         padding: 0;
         grid-column: 2 / 5;
@@ -473,5 +508,33 @@ footer {
         height: 100%;
         justify-self: center;
         align-self: center;
+    }
+
+    #videos-button {
+        grid-row: -1;
+        grid-column: 3;
+        justify-self: center;
+        align-self: center;
+        margin-bottom: 1em;
+    }
+
+    
+
+    /* Videos Page */
+    #myVideo {
+        right: 0;
+        top: -10vh;
+        min-width: 100vw; 
+        min-height: 120vh;
+        opacity: 0.6;
+        z-index: -1;
+      }
+
+      .vid-wrap .link {
+        font-size: 1.2rem;
+        display: inline-block;
+        border: 1px solid rgba(255, 255, 255, 0.9);
+        margin: 1em;
+        padding: 1em;
     }
 }
