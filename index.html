@@ -20,7 +20,7 @@
             <span class="logo">Shawn</span>
             <ul class="main-nav" id="js-menu">
                 <li>
-                    <a href="#home" class="nav-links">Home</a>
+                    <a href="index.html" class="nav-links">Home</a>
                 </li>
                 <li>
                     <a href="#about" class="nav-links">About me</a>
@@ -29,11 +29,9 @@
                     <a href="#fighting" class="nav-links">Fighting</a>
                 </li>
                 <li>
-                    <a href="#" class="nav-links">blank</a>
+                    <a href="videos.html" class="nav-links">Videos</a>
                 </li>
-                <li>
-                    <a href="#" class="nav-links"></a>
-                </li>
+                
             </ul>
         </nav>
     </header>
@@ -42,44 +40,45 @@
     <section id="home">
          <div class="h-wrapper">
             <h1>Hi, I'm <span class="highlight">Shawn Steen</span>.<br>I'm an aspiring web developer.</h1>
-            <p>Welcome to my personal site, where I'll share some of my story, mostly with photos.</p>
-            <p class="heading-caption"><span class="highlight">Thank you</span> for checking it out!</p>
-            <div id="about-button" class="button">
-                <a href="#about" class="link">
-                     The Family<br>
-                    <i id="down" class="fas fa-chevron-down"></i>
-                </a>
-            </div>
-            <div id="fighting-button" class="button">
-                <a href="#fighting" class="link">
+            <p class="intro">Welcome to my personal site, where I'll share some of my story, mostly with photos.</p>
+            <p class="heading-caption">Click a <span class="highlight">button</span> to jump to that section.</p>
+            <a href="#about" id="about-button" class="link">
+                <div  class="button">
+                     Me and the Fam<br>
+                    <i id="down" class="fas fa-chevron-down"></i>                
+                </div>
+            </a>
+
+            <a href="#fighting" id="fighting-button" class="link">
+                <div  class="button">                
                      Martial Arts<br>
                     <i id="alt-down" class="fas fa-chevron-down"></i>
-                </a>
-            </div>
+                </div>
+            </a>
          </div>       
     </section>
     
     <section id="about">
         <div class="about-wrapper">
             <h2 class="section-heading">Me and the Fam</h2>
-            <figure class="img-container">
+            <figure id="img1" class="img-container">
                 <img src="images/profile.jpg" alt="Shawn">
                 <figcaption class="caption">Me at a Buddhist temple in Greensboro North Carolina.</figcaption>
             </figure>
-            <figure class="img-container">
+            <figure id="img2" class="img-container">
                 <img src="images/meandKai.jpg" alt="Me and my daughter">
-                <figcaption class="caption">Me and my oldest daughter near Roanoke Rapids North Carolina.</figcaption>
+                <figcaption class="caption">My oldest daughter and I near Roanoke Rapids North Carolina.</figcaption>
             </figure>
-            <figure class="img-container">
+            <figure id="img3" class="img-container">
                 <img src="images/theGirls.jpg" alt="Twins">
                 <figcaption class="caption">My younger daughters. Yes they're twins. Yes they're really this cute.</figcaption>
             </figure>
-            <figure class="img-container">
+            <figure id="img4" class="img-container">
                 <img src="images/meandMyGirls.jpg" alt="Me and my three daughters">
                 <figcaption class="caption">All four of us a few years ago.</figcaption>
             </figure>
-            <figure class="img-container">
-                <img src="images/family.jpg" alt="Family">
+            <figure id="img5" class="img-container">
+                <img id="family-photo" src="images/family.jpg" alt="Family">
                 <figcaption class="caption">Here is the whole family on my parents property.</figcaption>
             </figure>
         </div>
@@ -87,32 +86,32 @@
 
     <section id="fighting">
         <div class="fighting-wrapper">
-            <h2 class="section-heading">Martial Arts Years</h2>
-            <figure class="img-container">
-                <img src="images/creditSeanHurt3.jpg" alt="Me in the cage. Credit Sean Hurt." class="heading-img">
+            <h2 class="section-heading">For years I dedicated my life to martial</h2>
+            <figure id="img6" class="img-container">
+                <img id="fight-photo" src="images/creditSeanHurt3.jpg" alt="Me in the cage. Credit Sean Hurt." class="heading-img">
             </figure>
-            <figure class="img-container">
+            <figure id="img7" class="img-container">
                 <img src="images/muayThaiWorkout.jpg" alt="Training">
-                <figcaption>Here I'm training with Chase "The Weapon" Walden of GrindStone Athletics&trade;.
+                <figcaption>Training with Chase "The Weapon" Walden of GrindStone Athletics&trade;.
                      If you're ever in the Virginia Beach area check them out.<br>Here is a link to their website.
                     <a href="https://www.grindstoneathleticsvb.com/">
                         <img src="images/grindStone.JPG" alt="" class="thumb-link">
                     </a>
                 </figcaption>
             </figure>
-            <figure class="img-container">
+            <figure id="img8" class="img-container">
                 <img src="images/firstTitle2009.jpg" alt="My first title">
                 <figcaption>My first Muay Thai title in 2009.</figcaption>
             </figure>
-            <figure class="img-container">
+            <figure id="img9" class="img-container">
                 <img src="images/chaseandShawn.jpg" alt="Me and Chase after winning a title.">
                 <figcaption>Coach "Weapon" and I after a 15 minute long Mixed Martial Arts title fight. Check out the belt!</figcaption>
             </figure>
-            <figure class="img-container">
+            <figure id="img10" class="img-container">
                 <img src="images/creditSeanHurt.jpg" alt="Me during a fight.">
                 <figcaption>During the fight. Photo by Sean Hurt.</figcaption>
             </figure>
-            <figure class="img-container">
+            <figure id="img11" class="img-container">
                 <img src="images/creditSeanHurt2.jpg" alt="Me during a fight.">
                 <figcaption>My favorite picture from that fight. Photo by Sean Hurt.</figcaption>
             </figure>
