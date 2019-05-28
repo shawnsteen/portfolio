@@ -307,7 +307,7 @@ footer {
 /* Adjust Background Video for Landscape View Phone/Tablet */
 @media screen and (min-width: 500px) {
     #myVideo {
-        right: 10vw;
+        right: -10vw;
     }
 }
 
