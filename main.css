@@ -242,6 +242,7 @@ iframe {
 #vid-body {
     height: 100vh;
 }
+
 #myVideo {
     position: fixed;
     right: -33vw;
@@ -303,6 +304,12 @@ footer {
     float: right;
 }
 
+/* Adjust Background Video for Landscape View Phone/Tablet */
+@media screen and (min-width: 500px) {
+    #myVideo {
+        right: 10vw;
+    }
+}
 
 /* Style for Larger Screen */
 @media screen and (min-width: 700px) {
@@ -539,9 +546,3 @@ footer {
     }
 }
 
-/* Adjust Background Video for Landscape View Phone/Tablet */
-@media screen and (min-width: 500px) {
-    #myVideo {
-        right: 10vw;
-    }
-}
