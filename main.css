@@ -257,8 +257,8 @@ iframe {
       margin-top: 1em;
   }
 
-  .vid-wrap h2 {
-      background: rgba(72, 133, 237, 0.1);
+  .videos h2 {
+      background: rgba(72, 133, 237, 0.5);
   }
 
   .vid-wrap .link {
